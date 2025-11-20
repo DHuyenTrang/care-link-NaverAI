@@ -1,0 +1,3 @@
+- Link figma tham khảo: 
+- https://www.figma.com/design/Ogfc5BKyeZi7919LZHJYSP/Mobile-Apps-%E2%80%93-Prototyping-Kit--Community-?node-id=6-464&p=f&t=vsWDoeRJerkb1exM-0
+- https://www.figma.com/design/jm98XdhtSSfAgK26cMDI7F/Meditation-app-UI--Community-?node-id=3-2&t=YXpB9TDXAt8LFUF4-0

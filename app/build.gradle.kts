@@ -2,7 +2,7 @@ plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
     id("androidx.navigation.safeargs")
-    id("com.google.gms.google-services")
+//    id("com.google.gms.google-services")
     id("com.google.devtools.ksp")
 }
 
@@ -104,4 +104,8 @@ dependencies {
     val recyclerviewVersion = "1.4.0"
     implementation("androidx.recyclerview:recyclerview:$recyclerviewVersion")
     implementation("androidx.recyclerview:recyclerview-selection:1.2.0")
+}
+
+configurations.all {
+    exclude(group = "xmlpull", module = "xmlpull")
 }
