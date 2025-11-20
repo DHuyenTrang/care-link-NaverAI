@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Care Link</string>
+    <string name="error_lost_internet">Không có kết nối mạng</string>
+    <string name="error_server_message">Lỗi kết nối đến máy chủ</string>
+    <string name="error_send_to_server">Không thể gửi dữ liệu đến máy chủ</string>
+    <string name="invalid_data_from_server">Dữ liệu không hợp lệ</string>
+    <string name="error_request_timeout">Quá thời gian yêu cầu</string>
+    <string name="error_some_thing_wrong">Xảy ra lỗi vui lòng thử lại</string>
+</resources>
