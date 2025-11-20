@@ -1,5 +1,6 @@
-package ai.naver.carelink
+package ai.naver.carelink.ui
 
+import ai.naver.carelink.R
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity

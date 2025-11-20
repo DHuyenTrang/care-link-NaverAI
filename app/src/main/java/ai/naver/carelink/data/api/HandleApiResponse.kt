@@ -48,5 +48,3 @@ object HandleApiResponse {
         )
     }
 }
-
-annotation class NetworkService
