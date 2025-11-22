@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
-
     <color name="highlight_primary">#006FFD</color>
     <color name="highlight_secondary">#2897FF</color>
     <color name="highlight_tertiary">#6FBAFF</color>
@@ -33,4 +30,27 @@
     <color name="error_main">#FF616D</color>
     <color name="error_light">#FFE2E5</color>
 
+    <color name="background_page">@color/neutral_white</color>
+    <color name="background_surface">@color/neutral_light_4</color>
+    <color name="background_brand_subtle">@color/highlight_lightest</color>
+    <color name="background_inverse">@color/neutral_dark_1</color>
+    <color name="text_primary">@color/neutral_dark_1</color>
+    <color name="text_secondary">@color/neutral_dark_4</color>
+    <color name="text_tertiary">@color/neutral_dark_5</color>
+    <color name="text_on_brand">@color/neutral_white</color>
+    <color name="text_link">@color/highlight_primary</color>
+    <color name="border_default">@color/neutral_light_3</color>
+    <color name="border_strong">@color/neutral_light_2</color>
+    <color name="border_focus">@color/highlight_primary</color>
+    <color name="button_primary_bg">@color/highlight_primary</color>
+    <color name="button_disabled_bg">@color/neutral_light_3</color>
+
+    <color name="state_success_text">@color/success_dark</color>
+    <color name="state_success_bg">@color/success_light</color>
+
+    <color name="state_warning_text">@color/warning_dark</color>
+    <color name="state_warning_bg">@color/warning_light</color>
+
+    <color name="state_error_text">@color/error_dark</color>
+    <color name="state_error_bg">@color/error_light</color>
 </resources>

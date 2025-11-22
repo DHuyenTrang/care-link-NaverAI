@@ -1,7 +1,9 @@
 package ai.naver.carelink.ui
 
+import ai.naver.carelink.AuthActivity
 import ai.naver.carelink.R
 import ai.naver.carelink.data.datasources.remote.SupabaseConfig
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import androidx.activity.enableEdgeToEdge
@@ -24,5 +26,8 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+        val intent = Intent(this, AuthActivity::class.java)
+        startActivity(intent)
     }
 }
