@@ -108,7 +108,7 @@ dependencies {
     // 1. Supabase
     implementation(platform("io.github.jan-tennert.supabase:bom:3.0.0"))
     implementation("io.github.jan-tennert.supabase:postgrest-kt") // Database
-    implementation("io.github.jan-tennert.supabase:gotrue-kt")    // Auth
+    implementation("io.github.jan-tennert.supabase:auth-kt")      // Auth
     implementation("io.github.jan-tennert.supabase:realtime-kt")  // Realtime
     implementation("io.github.jan-tennert.supabase:storage-kt")   // Upload Avatar
 

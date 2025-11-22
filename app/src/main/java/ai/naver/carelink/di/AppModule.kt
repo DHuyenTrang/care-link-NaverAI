@@ -9,4 +9,5 @@ val appModule = module {
     includes(networkModule)
     includes(repositoryModule)
     includes(viewModelModule)
+    includes(useCaseModule)
 }
