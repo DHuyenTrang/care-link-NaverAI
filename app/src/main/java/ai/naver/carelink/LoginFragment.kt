@@ -17,14 +17,12 @@ import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import kotlinx.coroutines.launch
 import org.koin.android.ext.android.inject
-import org.koin.androidx.viewmodel.ext.android.viewModel
-import org.koin.java.KoinJavaComponent.inject
 
 class LoginFragment : Fragment() {
     private var _binding: FragmentLoginBinding? = null
     private val binding get() = _binding!!
 
-    private val viewModel: AuthViewModel by viewModel()
+    private val viewModel: AuthViewModel by inject()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -57,7 +55,7 @@ class LoginFragment : Fragment() {
 
     private fun observeData() {
         viewLifecycleOwner.lifecycleScope.launch {
-            viewModel.uiState.collect { state ->
+            viewModel.uiLoginState.collect { state ->
                 when (state) {
                     is AuthUiState.Idle -> {
                         binding.progressBar.isVisible = false
@@ -73,13 +71,14 @@ class LoginFragment : Fragment() {
                         binding.progressBar.isVisible = false
                         binding.btnLogin.isEnabled = true
 
+                        showToast(state.message)
                         navigateToMain()
                     }
 
                     is AuthUiState.Error -> {
                         binding.progressBar.isVisible = false
                         binding.btnLogin.isEnabled = true
-                        showError(state.message)
+                        showToast(state.message)
                     }
                 }
             }
@@ -123,7 +122,7 @@ class LoginFragment : Fragment() {
         requireActivity().finish()
     }
 
-    private fun showError(message: String) {
+    private fun showToast(message: String) {
         Toast.makeText(context, message, Toast.LENGTH_LONG).show()
     }
 

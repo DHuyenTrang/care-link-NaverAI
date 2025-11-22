@@ -20,7 +20,7 @@
         android:src="@android:drawable/ic_menu_revert"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:tint="@color/neutral_dark_1" />
+        app:tint="@color/text_secondary" />
 
     <ScrollView
         android:layout_width="match_parent"

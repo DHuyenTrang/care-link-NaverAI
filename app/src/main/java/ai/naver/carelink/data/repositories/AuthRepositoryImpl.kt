@@ -4,13 +4,15 @@ import ai.naver.carelink.domain.model.User
 import ai.naver.carelink.domain.repository.AuthRepository
 import io.github.jan.supabase.auth.Auth
 import io.github.jan.supabase.auth.providers.builtin.Email
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.withContext
 import kotlinx.serialization.json.buildJsonObject
 import kotlinx.serialization.json.put
 
 class AuthRepositoryImpl(private val auth: Auth) : AuthRepository {
 
-    override suspend fun login(email: String, pass: String): Result<Unit> {
-        return runCatching {
+    override suspend fun login(email: String, pass: String): Result<Unit> = withContext(Dispatchers.IO) {
+        return@withContext runCatching {
             auth.signInWith(Email) {
                 this.email = email
                 this.password = pass
