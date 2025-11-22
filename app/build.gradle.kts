@@ -104,6 +104,20 @@ dependencies {
     val recyclerviewVersion = "1.4.0"
     implementation("androidx.recyclerview:recyclerview:$recyclerviewVersion")
     implementation("androidx.recyclerview:recyclerview-selection:1.2.0")
+
+    // 1. Supabase
+    implementation(platform("io.github.jan-tennert.supabase:bom:3.0.0"))
+    implementation("io.github.jan-tennert.supabase:postgrest-kt") // Database
+    implementation("io.github.jan-tennert.supabase:gotrue-kt")    // Auth
+    implementation("io.github.jan-tennert.supabase:realtime-kt")  // Realtime
+    implementation("io.github.jan-tennert.supabase:storage-kt")   // Upload Avatar
+
+    // Ktor Engine
+    implementation("io.ktor:ktor-client-android:3.0.0")
+
+    // 2. Serialization
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.7.3")
+
 }
 
 configurations.all {
